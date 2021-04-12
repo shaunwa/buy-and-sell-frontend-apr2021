@@ -1,0 +1,22 @@
+<div class="content-box">
+    <h2>Create New Listing</h2>
+    <div>
+        <label>
+            Name:
+            <input [(ngModel)]="name" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Description:
+            <input [(ngModel)]="description" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Price:
+            <input [(ngModel)]="price" (change)="onPriceChanged()"/>
+        </label>
+    </div>
+    <button (click)="onCreateClicked()">Create</button>
+</div>

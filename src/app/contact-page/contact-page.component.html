@@ -1,0 +1,16 @@
+<div class="content-box">
+    <h2>Contact the owner of {{listing.name}}</h2>
+    <div>
+        <label>
+            Your email address:
+            <input [(ngModel)]="email" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Your message:
+            <textarea rows="5" cols="20" [(ngModel)]="message"></textarea>
+        </label>
+    </div>
+    <button (click)="sendMessage()">Send</button>
+</div>

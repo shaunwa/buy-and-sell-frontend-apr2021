@@ -1,0 +1,22 @@
+<div class="content-box">
+    <h2>Edit Listing</h2>
+    <div>
+        <label>
+            Name:
+            <input [(ngModel)]="name" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Description:
+            <input [(ngModel)]="description" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Price:
+            <input [(ngModel)]="price" />
+        </label>
+    </div>
+    <button (click)="onSaveChangesClicked()">Save Changes</button>
+</div>
